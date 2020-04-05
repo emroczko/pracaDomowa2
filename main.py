@@ -6,18 +6,18 @@ app = FastAPI()
 
 
 
-@app.get("/")
+@app.get("/method")
 def root():
     return {"method": "GET"}
 
-@app.post("/")
+@app.post("/method")
 def root():
     return {"method": "POST"}
 
-@app.put("/")
+@app.put("/method")
 def root():
     return {"method": "PUT"}
 
-@app.delete("/")
+@app.delete("/method")
 def root():
     return {"method": "DELETE"}
